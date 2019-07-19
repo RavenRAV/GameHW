@@ -4,7 +4,7 @@ public abstract class GameEntity {
     private int health;
     private int damage;
 
-    public GameEntity(int health, int damage){
+    public GameEntity(int health, int damage) {
         this.setHealth(health);
         this.setDamage(damage);
     }

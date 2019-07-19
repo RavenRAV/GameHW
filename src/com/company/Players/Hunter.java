@@ -13,9 +13,21 @@ public class Hunter extends Hero {
     @Override
     public void useAbility(Hero[] heroes, Boss boss) {
         Random r = new Random();
+        setDamage(getDamage()*r.nextInt(2)+2);}
+        /*for (Hero hero:heroes) {
+            if(hero.getAbility() == Ability.CRITICAL_DAMAGE){
+                hero.setDamage(hero.getDamage() * (r.nextInt(2)+2));
+            }
+
+        }
+    }
+
+
+    /*{
+        Random r = new Random();
         int randomNamber = r.nextInt(4 - 1) + 1;
         heroes[3].setDamage(heroes[3].getDamage() * randomNamber);
 
 
-    }
+    }*/
 }
